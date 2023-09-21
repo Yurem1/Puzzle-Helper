@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- This displays the title, which is the name of the App -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/blue"
+        />
+
+    <!-- The description is shown just below the title. A brief summary about the app
+     including instructions and information -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <!-- A button, which functions serves as to upload an image (a word puzzle) -->
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_button"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
