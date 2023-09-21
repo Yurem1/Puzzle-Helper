@@ -1,6 +1,6 @@
 # Puzzle-Helper
 
-Welcome to Puzzle-Helper, your trusty companion for conquering word search puzzles with ease! 🧩
+Welcome to Puzzle-Helper, your trusty companion for conquering word search puzzles with ease! 😍
 
 **What is Puzzle-Helper?**
 Puzzle-Helper is a clever tool designed to make your life as a student (or puzzle enthusiast) a whole lot simpler. Say goodbye to the hours spent squinting at word search grids, and hello to speedy solutions!
