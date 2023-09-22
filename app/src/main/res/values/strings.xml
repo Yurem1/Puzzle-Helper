@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Word Puzzle Tool</string>
+    <string name="app_name">Puzzle Helper</string>
     <string name='description'>Welcome to the most sophisticated app ever!</string>
     <string name='upload_button'>Upload image</string>
 </resources>
