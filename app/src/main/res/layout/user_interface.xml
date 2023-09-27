@@ -39,4 +39,14 @@
         android:layout_gravity="center_horizontal"
         />
 
+    <TextView
+        android:id="@+id/can_upload_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/can_upload_images"
+        android:textColor="@color/red"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"
+        />
+
 </LinearLayout>
