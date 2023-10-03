@@ -11,18 +11,19 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-
-class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
+internal class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
 
     companion object {
 
-        private const val CAMERA_PERMISSION_REQUEST_CODE = 1
+        public const val CAMERA_PERMISSION_REQUEST_CODE = 1
 
-        /* Statically calls makeText() in order to show the user that they
-        lack permissions (if any) */
+        /* Static method, showToast() is called statically in order to show
+         the user that they lack permissions (if any). It's called everytime to remind
+         the user to enable permissions from their android settings */
         private fun showToast(thisContext: Activity): Unit {
+
             if (!hasCameraPermissions(thisContext)) {
-                return Toast.makeText(
+                Toast.makeText(
                     thisContext,
                     "You lack Permissions",
                     Toast.LENGTH_SHORT
@@ -30,18 +31,18 @@ class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
             }
         }
 
-        /* Checks if user holds camera permissions, returns false if does not */
-        private fun hasCameraPermissions(thisContext: Context?): Boolean {
+        /* Checks if user holds camera permissions, returns false if it does not */
+        internal fun hasCameraPermissions(thisContext: Context?): Boolean {
             return EasyPermissions.hasPermissions(
                 thisContext,
                 Manifest.permission.CAMERA
             )
         }
 
-        /* Requests the user for camera permissions */
+        /* Requests the user for camera permissions, then calls showToast() */
         internal fun requestCameraPermission(thisContext: Activity): Unit {
             EasyPermissions.requestPermissions(
-                host = thisContext,
+                thisContext,
                 "Camera Permissions are required",
                 CAMERA_PERMISSION_REQUEST_CODE,
                 Manifest.permission.CAMERA
