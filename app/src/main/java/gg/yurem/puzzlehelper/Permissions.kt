@@ -25,7 +25,7 @@ internal class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
             if (!hasCameraPermissions(thisContext)) {
                 Toast.makeText(
                     thisContext,
-                    "You lack Permissions",
+                    "Missing Camera Permissions!",
                     Toast.LENGTH_SHORT
                 ).show()
             }

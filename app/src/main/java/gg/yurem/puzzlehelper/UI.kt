@@ -12,19 +12,12 @@ internal class UI : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.user_interface)
 
-        /* Fetches the Button element from user_interface using an ID, then the application
-        awaits for a click, if so, the application calls requestCameraPermission() */
+        /* Fetches the Button element from user_interface,
+         using an ID, then the application
+        awaits for a click, if so, the application calls takePicture() */
 
-        fun takePicture() {
-
-            if(Permissions.hasCameraPermissions(this)) {
-                Camera.takePicture(this)
-            }
-            else {
-                Permissions.requestCameraPermission(this)
-            }
-        }
         findViewById<ImageButton>(R.id.upload_button).setOnClickListener() {
+            Tools.takePicture(this)
         }
     }
 }
