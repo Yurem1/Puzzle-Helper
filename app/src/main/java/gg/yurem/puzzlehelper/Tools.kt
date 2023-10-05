@@ -7,6 +7,7 @@ internal class Tools {
     /* A mixture of utility functions
      using functions from different classes within the
     application */
+    
     companion object {
         fun takePicture(thisContext: Activity) {
 

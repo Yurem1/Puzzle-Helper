@@ -15,11 +15,10 @@ internal class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
 
     companion object {
 
-        public const val CAMERA_PERMISSION_REQUEST_CODE = 1
-
         /* Static method, showToast() is called statically in order to show
          the user that they lack permissions (if any). It's called everytime to remind
          the user to enable permissions from their android settings */
+
         private fun showToast(thisContext: Activity): Unit {
 
             if (!hasCameraPermissions(thisContext)) {
@@ -44,7 +43,7 @@ internal class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
             EasyPermissions.requestPermissions(
                 thisContext,
                 "Camera Permissions are required",
-                CAMERA_PERMISSION_REQUEST_CODE,
+                1,
                 Manifest.permission.CAMERA
             )
             showToast(thisContext)
