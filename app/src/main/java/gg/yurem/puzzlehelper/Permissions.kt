@@ -1,15 +1,10 @@
 package gg.yurem.puzzlehelper
 
-import android.util.Log
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.fragment.app.Fragment
 import com.vmadalin.easypermissions.EasyPermissions
 import android.Manifest
 import android.app.Activity
 import android.content.Context
-import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 internal class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
 

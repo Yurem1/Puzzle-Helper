@@ -1,9 +1,7 @@
 package gg.yurem.puzzlehelper
 
 import android.app.Activity
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 
 internal class UI : Activity() {
