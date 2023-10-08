@@ -1,10 +1,12 @@
 package gg.yurem.puzzlehelper
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 
-internal class UI : Activity() {
+open class UI : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -11,11 +11,11 @@ internal class Tools {
     companion object {
         fun takePicture(thisContext: Activity) {
 
-            if(Permissions.hasCameraPermissions(thisContext)) {
-                Camera.takePicture(thisContext)
-            }
-            else {
-                Permissions.requestCameraPermission(thisContext)
+            when(Permissions.hasCameraPermissions(thisContext)) {
+
+                true -> Camera.takePicture(thisContext)
+                else -> Permissions.requestCameraPermission(thisContext)
+
             }
         }
     }
