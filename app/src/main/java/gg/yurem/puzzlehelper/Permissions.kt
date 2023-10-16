@@ -6,8 +6,9 @@ import android.Manifest
 import android.app.Activity
 import android.content.Context
 import android.widget.Toast
-internal class Permissions : Fragment(), EasyPermissions.PermissionCallbacks {
+internal class Permissions : Fragment, EasyPermissions.PermissionCallbacks {
 
+    constructor() : super() {}
     companion object {
 
         /* Static method, showToast() is called statically in order to show

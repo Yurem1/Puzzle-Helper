@@ -9,14 +9,14 @@ import androidx.core.app.ActivityCompat.startActivity
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.fragment.app.Fragment
 
-internal class Camera : UI() {
+internal class Camera : UI {
+
+    constructor() : super() {}
 
     /* Opens up the camera to a singular picture  */
-
     companion object {
 
         private const val cameraRequestCode: Int = 1
-
         internal fun takePicture(thisContext: Activity) {
 
             startActivityForResult(
