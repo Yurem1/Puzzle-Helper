@@ -9,6 +9,7 @@ import android.widget.Toast
 internal class Permissions : Fragment, EasyPermissions.PermissionCallbacks {
 
     constructor() : super() {}
+
     companion object {
 
         /* Static method, showToast() is called statically in order to show

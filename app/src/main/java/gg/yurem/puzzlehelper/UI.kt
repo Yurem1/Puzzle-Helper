@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 open class UI : Activity {
 
     constructor() : super() {}
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.user_interface)
