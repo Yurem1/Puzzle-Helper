@@ -7,7 +7,9 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity {
 
-    constructor() : super() {}
+    constructor() : super() {
+        /* Redundant way to call a constructor, do not mind */
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

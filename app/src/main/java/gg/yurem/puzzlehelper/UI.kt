@@ -8,18 +8,17 @@ import androidx.appcompat.app.AppCompatActivity
 
 open class UI : Activity {
 
-    constructor() : super() {}
+    constructor() : super() {
+        /* Redundant way to call a constructor, do not mind */
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.user_interface)
 
-        /* Fetches the Button element from user_interface,
-         using an ID, then the application
-        awaits for a click, if so, the application calls takePicture() */
-        
+        /* Upload Image Button */
         findViewById<ImageButton>(R.id.upload_button).setOnClickListener() {
-            Tools.takePicture(this)
+            Tools.takePicture(this) // Calls takePicture to take a picture
         }
     }
 }

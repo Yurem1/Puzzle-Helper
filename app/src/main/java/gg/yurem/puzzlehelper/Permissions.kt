@@ -8,7 +8,9 @@ import android.content.Context
 import android.widget.Toast
 internal class Permissions : Fragment, EasyPermissions.PermissionCallbacks {
 
-    constructor() : super() {}
+    constructor() : super() {
+        // Redundant way to call a constructor, do not mind
+    }
 
     companion object {
 
@@ -23,7 +25,7 @@ internal class Permissions : Fragment, EasyPermissions.PermissionCallbacks {
                     thisContext,
                     "Missing Camera Permissions!",
                     Toast.LENGTH_SHORT
-                ).show()
+                ).show() // Toast pops to notify the user for missing permissions
             }
         }
 
